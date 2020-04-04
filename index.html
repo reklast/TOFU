@@ -51,11 +51,11 @@
 
 <div class="navibar">
 	<div class="flex_title">
-		<!-- logo title -->
 		<div class="logo-title">
-	<h1>T O F U</h1>
-		<p>豆腐</p>
-		</div>
+					<h1 style="font-size: 32px;">T O F U</h1>
+						<p>豆腐</p>
+				</div>
+				<!-- logo title -->
 	</div>	
 
 	<header> 
@@ -64,9 +64,10 @@
 				<div class="nav1">
 				<li><a href="#">HOME</a></li>
 				<li><a href="#">MANGA</a></li>
-				<li><a href="#">DISCORD</a></li>
+				<li><a href="https://discord.gg/WX7BCY6">DISCORD</a></li>
 				</div>
-				<img class="logo" src="boi.png" alt="logo">
+				
+				<!--<img class="logo" src="boi.png" alt="logo">-->
 				<div class="nav2">
 				<li><a href="#">ABOUT</a></li>
 				<li><a href="#">SEARCH</a></li>
@@ -76,6 +77,34 @@
 		</nav>
 	</header>
 
+			<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <a href="#"><img src="akira.jpg" style="width:100%"></a>
+  </div>
+
+  <div class="mySlides fade">
+    <a href="/Manga/Dorohedoro Vol-1/"><img src="doro.jpg" style="width:100%"></a>
+  </div>
+
+  <div class="mySlides fade">
+    <a href="#"><img src="takagi.jpg" style="width:100%"></a>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
 </div>
 <div class="page_content">
 					<div class="empty_block1">
@@ -84,24 +113,29 @@
 	<div class="left_block">
 		<div class="greeting">
 			<h2> Hello there!</h2>
-				<h3>Welcome on my personal website.</h3>
+				<h3>Welcome on my manga website.</h3>
 		</div>
 
 			<div class="empty_block2">
 			&nbsp;
 			</div>
 
+			<h2 class="recent_update"> Recently added </h2>
+
 			<div class="thumbnail">
-				<div class="thumbnail_1" href="#" target="_blank">
-					<h1>SHOP</h1>
-				</div>
-				<!--Tupoe Govno-->	
-				<div class="thumbnail_2" href="#" target="_blank">
-					<h1>ANIME</h1>
-				</div>
-				<a class="thumbnail_3" href="Manga/index.html" target="_blank">
-					<h1>MANGA</h1>
+				<a class="thumbnail_new" href="#" target="_blank">
+					<img class="thumbnail_new" src="new/new1.jpg">
 				</a>
+
+				<!--Tupoe Govno-->	
+				<a class="thumbnail_new" href="#" target="_blank">
+					<img class="thumbnail_new" src="new/new2.jpg">
+				</a>
+		
+				<a class="thumbnail_new" href="#" target="_blank">
+					<img class="thumbnail_new" src="new/new3.jpg">
+				</a>
+				
 				<!--Tupogo Govna-->
 			</div>
 
@@ -184,3 +218,4 @@
 
 </body>
 </html>
+<script src="slideshow.js"></script>

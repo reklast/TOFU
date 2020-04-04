@@ -176,6 +176,7 @@ nav{
 	text-align: center;
 	box-sizing: border-box;
 	padding-top: 20px;
+
 }
 
 @media screen and (max-width: 800px){
@@ -242,6 +243,97 @@ display: inline-flex;
 @media screen and (max-width: 800px){
 	.navibar{
 		background-position: center;
+		max-height: 800px;
+	}
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+
+}
+
+.mySlides img {
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media screen and (max-width: 800px){
+	.slideshow-container{
+		margin-top: 290px;
 	}
 }
 
@@ -344,6 +436,27 @@ display: inline-flex;
  	}
  }
 
+ .recent_update{
+ 	margin-bottom: 29.8833px;
+	margin-top: 0px;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 25.5px;
+	font-weight: 600;
+	font-style: normal;
+	color: #ecce6d;
+	letter-spacing: .2em;
+	line-height: 1.8em;
+	text-transform: uppercase;
+
+ }
+
+ @media screen and (max-width: 800px){
+ 	.recent_update{
+ 		display: flex;
+ 		justify-content: center;
+ 	}
+ }
+
 .empty_block2{
 	padding: 17px;
 	position: relative;
@@ -369,15 +482,13 @@ display: inline-flex;
 	}
 }
 
-.thumbnail_1 {
-	width: 200px;
-	height: 400px;
+.thumbnail_new {
+	width: 245px;
+	height: 370px;
 	margin-left: 0px !important;
 	margin-right: auto;
-	background-image: url(shop.jpg);
 	background-size: cover;
 	box-sizing: border-box;
-	opacity: 0.2;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -388,79 +499,16 @@ display: inline-flex;
 }
 
 @media screen and (max-width: 800px){
-	.thumbnail_1{
+	.thumbnail_new{
 		margin-left: auto !important;
+		margin-top: 30px;
 	}
 }
 
-.thumbnai_1 h1{
-	display: flex;
-	justify-content: center;
-}
-
-/*.thumbnail_1:hover {
+.thumbnail_new:hover {
 	transform:translateZ(0) scale(1.02);
  	box-shadow:0 7px 12px -3px #434e52;
- 	opacity: 0.1;
-}*/
-
-.thumbnail_2 {
-	width: 200px;
-	height: 400px;
-	background-image: url(anime2.jpg);
-	background-size: cover;
-	opacity: 0.2;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	color: #e3b04b;
-	transition: all 0.3s ease 0s;
-	border-radius: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	
 }
-
-/*.thumbnail_2:hover {
-	transform:translateZ(0) scale(1.02);
- 	box-shadow:0 7px 12px -3px #434e52;
- 	opacity: 0.7;
-}*/
-
-.thumbnail_3 {
-	width: 200px;
-	height: 400px;
-	background-image: url(manga.jpg);
-	background-size: cover;
-	opacity: 0.9;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	color: #e3b04b;
-	transition: all 0.3s ease 0s;
-	border-radius: 10px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.thumbnail_3:hover {
-	transform:translateZ(0) scale(1.02);
- 	box-shadow:0 7px 12px -3px #434e52;
- 	opacity: 0.7;
-}
-
-.thumbnail_3 h1{
-	font-size: 32px;
-}
-
-@media screen and (max-width: 800px){
-	.thumbnail_2, .thumbnail_3{
-		margin-top: 10px;
-	}
-}
-
 
 .updates {
 	border:0px solid black;
